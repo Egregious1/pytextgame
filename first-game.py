@@ -34,6 +34,36 @@ def smellyMareintro():
     print('The doors open wide and you are greeted with a blast of warmth and voices')
     print('The sound of merryment and music can beheard loudly in the streets.')
     print('you enter the Smelly Mare unsure what to expect')
+    print('At the entrance a large breasted wench greets you with a smile as sweet as sin and with a voice to match says to you,')
+    print('"Welcome to the Smelly Mare, where the drinks are stiff and the woman are loose!"')
+    print('"The name is Gilda,"')
+    gildaMare()
+
+#gilda interaction function going to keep it simple but without the just y/n questions and give some kind of choice. this will also help avoid repeating the intro.
+
+def gildaMare():
+    print('"what can I do you for a drink, a room, a lady, or all three?"')
+    gilda = input('"what will it be (Drink, Lady, Room, or Info)?" ')
+    if gilda == 'Drink' or gilda == 'drink':
+        print('"Here ya go!" Gilda slides you a tankard of some sweet smelling foaming liquid that you quickly drink down after one small sip.')
+        print('You feel loads better than you did before.')
+        print()
+        gildaMare()
+    elif gilda == 'Lady' or gilda == 'lady':
+        print('"A woman eh? It might be hard to find one for someone with no reputation after all, but I have been known to make wonders happen."')
+        print()
+        gildaMare()
+    elif gilda == 'room' or gilda == 'Room':
+        print('"We have the finest rooms in all of Ravenwood even if we are the ONLY inn in Ravenwood"')
+        print()
+        gildaMare()
+    elif gilda == 'info' or gilda == 'Info':
+        print('some important quest stuff goes here')
+        print()
+        #insert some code to move on to the next function here 
+    else: 
+        if gilda != "Drink" or gilda != 'drink' or gilda != 'Lady' or gilda != 'lady' or gilda != 'room' or gilda != 'Room' or gilda != 'info' or gilda != 'Info':
+            gildaMare()
 
 # path selection - this code is going to suck but I need to write it for each room until I learn how to optimize it.
 
