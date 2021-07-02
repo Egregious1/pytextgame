@@ -62,15 +62,28 @@ def gildaMare():
         print()
         gildaMare()
     elif gilda == 'info' or gilda == 'Info':
-        print('some important quest stuff goes here')
+        print('I do have a wee problem that could use some help from someone like yourself...')
         print()
+        gildaQuest()
         # insert some code to move on to the next function here
     else:
         if gilda != "Drink" or gilda != 'drink' or gilda != 'Lady' or gilda != 'lady' or gilda != 'room' or gilda != 'Room' or gilda != 'info' or gilda != 'Info':
             gildaMare()
 
-# path selection - this code is going to suck but I need to write it for each room until I learn how to optimize it.
+#start of gilda's quest line
+def gildaQuest():
+    print('Glida motions you to follow her away from the door.')
+    print('Gilda turns around and begins')
+    print(f'"Okay {playerName}, I dont why but I feel like I can trust you with this.')
+    print('Down in the cellar we have a bit of a problem..."')
+    print()
+    print('"Rats, big ones, one of unusual size to be exact"')
+    print('"I just need you to go down there and take care of them for me yeah? If you take of this for me Ill take care of you later."')
+    print('With a wink she turns around and smiles at you over her shoulder')
+    print('"Just come back to me when youre done hun."')
 
+
+# path selection - this code is going to suck but I need to write it for each room until I learn how to optimize it.
 
 def introPath():
     path = input('Do you go left or right? ("L" or "R") ')
