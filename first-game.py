@@ -26,7 +26,9 @@ def displayIntro():
     print(f'You call out, "It is I {playerName}, I have come back home!"')
     print(f'{playerName}?! Well why didnt you say so? Come in come in!')
 
-#putting different rooms in this section
+# putting different rooms in this section
+
+
 def smellyMareintro():
     print()
     print('From outside you can hear the whole tavern is a buzz with life,')
@@ -36,16 +38,18 @@ def smellyMareintro():
     print('you enter the Smelly Mare unsure what to expect')
     print('At the entrance a large breasted wench greets you with a smile as sweet as sin and with a voice to match says to you,')
     print('"Welcome to the Smelly Mare, where the drinks are stiff and the woman are loose!"')
-    print('"The name is Gilda,"')
+    print('"The name is Gilda, and you are?"')
+    print('You tell her your name and the she asks,')
     gildaMare()
 
-#gilda interaction function going to keep it simple but without the just y/n questions and give some kind of choice. this will also help avoid repeating the intro.
+# gilda interaction function going to keep it simple but without the just y/n questions and give some kind of choice. this will also help avoid repeating the intro.
+
 
 def gildaMare():
     print('"what can I do you for a drink, a room, a lady, or all three?"')
     gilda = input('"what will it be (Drink, Lady, Room, or Info)?" ')
     if gilda == 'Drink' or gilda == 'drink':
-        print('"Here ya go!" Gilda slides you a tankard of some sweet smelling foaming liquid that you quickly drink down after one small sip.')
+        print(f'"Here ya go {playerName}!" Gilda slides you a tankard of some sweet smelling foaming liquid that you quickly drink down after one small sip.')
         print('You feel loads better than you did before.')
         print()
         gildaMare()
@@ -60,12 +64,13 @@ def gildaMare():
     elif gilda == 'info' or gilda == 'Info':
         print('some important quest stuff goes here')
         print()
-        #insert some code to move on to the next function here 
-    else: 
+        # insert some code to move on to the next function here
+    else:
         if gilda != "Drink" or gilda != 'drink' or gilda != 'Lady' or gilda != 'lady' or gilda != 'room' or gilda != 'Room' or gilda != 'info' or gilda != 'Info':
             gildaMare()
 
 # path selection - this code is going to suck but I need to write it for each room until I learn how to optimize it.
+
 
 def introPath():
     path = input('Do you go left or right? ("L" or "R") ')
@@ -95,5 +100,3 @@ print('to your right you see the town bizaar')
 print()
 print('Which way do you go? (L or R?)')
 introPath()
-
-
