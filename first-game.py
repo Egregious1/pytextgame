@@ -96,6 +96,14 @@ def introPath():
         if path != 'l' or path != 'L' or path != 'r' or path != 'R':
             introPath()
 
+def marketplaceIntro():
+    print()
+    print('As you make your way down to the end of the path the sweet smell of baked goods fills the air and you can hear all sorts of people buying and selling wares')
+    print('you pass by all sorts of small shops from fishmongers to brewers and even a small oddities shop.')
+    print('One sign in particular catches your eye. A small sign sitting outside a dark hut that says')
+    print('"do some shit for me you asshole"')
+    print('you wonder what this could be so you step inside.')
+
 
 startScreen()
 print()
@@ -109,7 +117,7 @@ displayIntro()
 print()
 print('You step through the gates and to your surprise the town is quiter than expected.')
 print('You look to your left and see the Smelly Mare the local inn')
-print('to your right you see the town bizaar')
+print('to your right you see the market place.')
 print()
 print('Which way do you go? (L or R?)')
 introPath()
